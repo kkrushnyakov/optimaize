@@ -41,6 +41,7 @@ public class IntegerCounter {
         }
         
         this.avg = this.avg.multiply(new BigDecimal(total)).add(BigDecimal.valueOf(element)).divide(new BigDecimal(total.add(BigInteger.ONE)), AVERAGE_SCALE, RoundingMode.HALF_UP);
+        this.total = this.total.add(BigInteger.ONE); 
     }
 
     public class IntegerCounterResult {

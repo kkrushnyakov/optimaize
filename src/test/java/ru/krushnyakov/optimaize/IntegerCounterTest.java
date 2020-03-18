@@ -55,7 +55,7 @@ public class IntegerCounterTest {
 
         counter.add(Integer.MAX_VALUE);
         counter.add(Integer.MIN_VALUE);
-        counter.add(2);
+        counter.add(4);
         
         assertEquals(1, counter.getResult().getAvg(), TESTING_PRECISION_DELTA);        
     }
